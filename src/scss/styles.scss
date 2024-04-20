@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "cmo_variables";
+@import "bootstrap/scss/bootstrap";
+
+body {
+  scroll-behavior: smooth;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 246, 223, 1) 100%
+  );
+}
+.navbar {
+  background: rgba(255, 246, 223, 1);
+}
+html.sr .load-hidden {
+  visibility: hidden;
+}
+.nav_active {
+  color: $dark;
+  border-bottom: 5px solid $yellow;
+  padding-bottom: 0px;
+}
+
+.main_view {
+  padding-top: 120px;
+}
+
+.download_btn {
+  transition: 0.3s;
+  box-shadow: 0 4px 0 0 $gray-700;
+}
+
+.hire_btn_container {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.hire_btn {
+  transition: 0.25s ease-in-out !important;
+  box-shadow: 0 5px 0 0 $primary_dark !important;
+}
+
+.hire_btn:hover {
+  transform: translateY(-7px) !important;
+  box-shadow: 0 9px 0 0 $primary_dark !important;
+}
+
+.headline_text_name {
+  font-size: 7.5rem;
+  margin-bottom: -35px;
+}
+
+.headline_text {
+  font-size: 2.1rem;
+  margin-bottom: -10px !important;
+}
+
+.profile_image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile_image_container {
+  width: 600px;
+  height: 360px;
+  position: relative;
+}
+.profile_image_background {
+  background-color: $yellow50;
+  height: 330px;
+  width: 650px;
+  margin-left: -25px;
+  margin-top: 15px;
+}
+
+.bg-primary-50 {
+  background-color: $yellow50;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+// Custom Contact Button
+.cssbuttons-io-button {
+  background: $yellow50;
+  color: $dark;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.5em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em $yellow_dark;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em $yellow;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: $yellow;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+// Custom Contact Button End
+
+// For Phone Screen
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    padding: 20px;
+  }
+  .nav_active {
+    color: $yellow;
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  .headline_text_name {
+    font-size: 4.3rem;
+    margin-bottom: -18px;
+  }
+
+  .headline_text {
+    font-size: 1.2rem;
+    margin-bottom: -10px !important;
+  }
+
+  .hire_btn_container {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  .profile_image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .profile_image_container {
+    width: 100%;
+    height: 240px;
+    position: relative;
+  }
+  .profile_image_background {
+    background-color: $yellow50;
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .description_box {
+    background: $yellow50;
+
+    p {
+      text-align: justify;
+      color: $dark;
+    }
+  }
+}
