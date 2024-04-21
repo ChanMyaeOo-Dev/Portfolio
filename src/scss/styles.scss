@@ -16,12 +16,12 @@
   background: rgba(255, 246, 223, 1);
 }
 
-.h0{
+.h0 {
   font-size: 3rem;
   line-height: 3rem;
 }
 
-.text-dark-50{
+.text-dark-50 {
   color: $dark50;
 }
 
@@ -90,22 +90,22 @@ html.sr .load-hidden {
 
 .profile_image_2 {
   height: 100%;
-  width: 500px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 .profile_image_container_2 {
+  width: 500px;
   height: 500px;
   position: relative;
 }
 .profile_image_background_2 {
   background-color: $primary;
-  height: 480px;
-  width: 480px;
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
+  height: 500px;
+  width: 500px;
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 .bg-primary-50 {
@@ -179,7 +179,21 @@ html.sr .load-hidden {
 
 // Custom Contact Button End
 
-.skill_card{
+.text_box_container {
+  width: 50%;
+}
+
+.text_box_container .sub_title {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.text_box_container .description {
+  width: 90%;
+  text-align: justify;
+}
+
+.skill_card {
   width: 900px;
   height: 500px;
   background: $yellow30;
@@ -239,5 +253,52 @@ html.sr .load-hidden {
       text-align: justify;
       color: $dark;
     }
+  }
+
+  .profile_image_2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .profile_image_container_2 {
+    width: 100%;
+    height: 240px;
+    position: relative;
+  }
+  .profile_image_background_2 {
+    background-color: $primary;
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .text_box_container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .text_box_container .sub_title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .text_box_container .description {
+    width: 100%;
+  }
+
+  .download_cv_btn {
+    width: 100%;
+  }
+
+  .skill_card {
+    width: 100%;
+    height: 300px;
+    background: $yellow30;
+    border: 2px solid $yellow50;
+    padding: 35px;
   }
 }
