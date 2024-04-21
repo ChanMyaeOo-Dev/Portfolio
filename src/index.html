@@ -7,12 +7,17 @@
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
+    <!-- Loading page -->
+    <div id="loading-page">
+      <div class="loader"></div>
+    </div>
+
     <nav class="navbar navbar-expand-lg mb-5 py-3 py-md-4 position-absolute top-0 w-100 z-3" >
       <div class="container">
         <a class="navbar-brand" href="#">
           <i class="bi bi-app-indicator me-2 fw-bold fs-3"></i>
-          Navbar</a
-        >
+          Portfolio
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -76,7 +81,7 @@
           </div>
 
           <div
-            class="d-flex flex-column flex-md-row align-items-end justify-content-between mb-5"
+            class="d-flex flex-column flex-md-row align-items-md-end align-items-center justify-content-between mb-5"
           >
             <div class="w-100 d-none d-md-block">
               <a class="nav-link" href="#contact">
@@ -100,18 +105,14 @@
               </a>
             </div>
 
-            <div class="profile_image_container_3">
+            <div class="profile_image_container_3 mb-4 mb-md-0">
               <div class="profile_image_background_3 rounded-4"></div>
               <img
                 src="https://github.com/ChanMyaeOo-Dev/Portfolio/blob/main/pro.jpg?raw=true"
-                class="rounded-4 object-fit-cover mx-auto profile_image_3"
+                class="rounded-4 object-fit-cover profile_image_3"
               />
             </div>
 
-            <!-- <img
-                src="https://github.com/ChanMyaeOo-Dev/Portfolio/blob/main/rocket.png?raw=true"
-                class="object-fit-cover mx-auto rocket"
-              /> -->
             <div class="profile_image_container d-none">
               <div class="profile_image_background rounded-4"></div>
               <img
@@ -192,7 +193,7 @@
         <div class="col-12 col-md-10 mx-auto my-auto">
           <div>
 
-                <p class="mb-2 text-dark h0 text-center">Skills & Experiences</p>
+                <p class="mb-2 text-dark h0 text-center mt-5 mt-md-0">Skills & Experiences</p>
 
                 <p class="mb-0 text-dark-50 fw-light fs-3 text-center mx-auto">
                   Currently pursuing computer science studies while actively engaged as a freelance graphic designer.
@@ -204,7 +205,7 @@
 
                 <div class="mt-3 mx-auto align-items-center justify-content-center skill_card rounded-4">
                   <img class="d-none d-md-block w-100" src="https://github.com/ChanMyaeOo-Dev/Portfolio/blob/main/des.png?raw=true" alt="">
-                  <img class="d-block d-md-none" src="https://raw.githubusercontent.com/ChanMyaeOo-Dev/Portfolio/441497044fe55318c7b581694f39f311ea4f131e/for_mobile_skill.svg" alt="">
+                  <img class="d-block d-md-none w-100 h-100 object-fit-cover" src="https://github.com/ChanMyaeOo-Dev/Portfolio/blob/main/mob.png?raw=true" alt="">
                 </div>
 
           </div>
@@ -213,16 +214,45 @@
       <!-- Experience Section End -->
 
       <!-- Projects Section Start -->
-      <section id="projects" class="row min-vh-100">
+      <section id="projects" class="row min-vh-100 bg-dark">
         <div class="col-12 col-md-10 mx-auto"></div>
       </section>
       <!-- Projects Section End -->
 
       <!-- Contact Section Start -->
-      <section id="contact" class="row min-vh-100 bg-primary">
-        <div class="col-12 col-md-10 mx-auto"></div>
+      <section id="contact" class="row bg-yellow">
+        <div class="col-12 col-md-10 mx-auto">
+          <div class="m-5 d-flex flex-column flex-column-reverse flex-md-row justify-content-center">
+            <img src="https://github.com/ChanMyaeOo-Dev/Portfolio/blob/main/rocket.png?raw=true"
+            class="rocket">
+            <div>
+              <p class="h0 mb-3">Say Hello at</p>
+              <p class="fs-3 text-dark-50 mb-2">
+                <i class="bi bi-telephone me-2"></i>
+                +959 779 866 151
+              </p>
+              
+              <p class="fs-3 text-dark-50 mb-2">
+                <i class="bi bi-envelope me-2"></i>
+                chanmyaeoodev@gmail.com
+              </p>
+              
+              <p class="fs-3 text-dark-50 mb-2">
+                <i class="bi bi-github me-2"></i>
+                https://github.com/ChanMyaeOo-Dev
+              </p>
+
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Contact Section End -->
     </div>
+    <div class="bg-secondary w-100 p-2">
+      <p class="fw-lighter text-dark-50 mb-0 mt-1 text-center">
+        Portfolio - Chan Myae Oo - 2024
+      </p>
+    </div>
+    
   </body>
 </html>
