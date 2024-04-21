@@ -226,12 +226,7 @@ html.sr .load-hidden {
 }
 
 .project_card {
-  transition: 0.3s;
-}
-
-.project_card:hover {
-  transform: translateY(-7px) !important;
-  box-shadow: 12px 12px 0 0 $primary_dark !important;
+  width: 100%;
 }
 
 // For Phone Screen
