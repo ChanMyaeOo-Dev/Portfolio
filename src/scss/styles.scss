@@ -68,6 +68,10 @@ html.sr .load-hidden {
   margin-bottom: -10px !important;
 }
 
+.rocket {
+  height: 600px;
+}
+
 .profile_image {
   height: 100%;
   width: 100%;
@@ -96,14 +100,34 @@ html.sr .load-hidden {
   left: 0;
 }
 .profile_image_container_2 {
-  width: 400px;
-  height: 520px;
+  width: 330px;
+  height: 450px;
   position: relative;
 }
 .profile_image_background_2 {
   background-color: $primary;
-  width: 400px;
-  height: 520px;
+  width: 330px;
+  height: 450px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.profile_image_3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile_image_container_3 {
+  width: 330px;
+  height: 420px;
+  position: relative;
+}
+.profile_image_background_3 {
+  background-color: $primary;
+  width: 330px;
+  height: 420px;
   margin-left: 25px;
   margin-top: 25px;
 }
