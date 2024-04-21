@@ -225,6 +225,15 @@ html.sr .load-hidden {
   padding: 35px;
 }
 
+.project_card {
+  transition: 0.3s;
+}
+
+.project_card:hover {
+  transform: translateY(-7px) !important;
+  box-shadow: 12px 12px 0 0 $primary_dark !important;
+}
+
 // For Phone Screen
 @media screen and (max-width: 768px) {
   .navbar-collapse {

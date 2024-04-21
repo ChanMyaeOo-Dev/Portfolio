@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    document.getElementById("loading-page").style.display = "none";
-  }, 3000);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(function () {
+//     document.getElementById("loading-page").style.display = "none";
+//   }, 3000);
+// });
+
+document.getElementById("loading-page").style.display = "none";
 
 // Import our custom CSS
 import "../scss/styles.scss";
