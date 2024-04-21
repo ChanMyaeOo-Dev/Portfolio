@@ -3,7 +3,7 @@
 @import "cmo_variables";
 @import "bootstrap/scss/bootstrap";
 
-body {
+.bg-yellow {
   scroll-behavior: smooth;
   background: rgb(255, 255, 255);
   background: radial-gradient(
@@ -15,6 +15,12 @@ body {
 .navbar {
   background: rgba(255, 246, 223, 1);
 }
+
+.h0{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -76,6 +82,26 @@ html.sr .load-hidden {
   width: 650px;
   margin-left: -25px;
   margin-top: 15px;
+}
+
+.profile_image_2 {
+  height: 100%;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile_image_container_2 {
+  height: 500px;
+  position: relative;
+}
+.profile_image_background_2 {
+  background-color: $primary;
+  height: 480px;
+  width: 480px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
 }
 
 .bg-primary-50 {

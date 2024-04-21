@@ -7,9 +7,7 @@
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg mb-5 py-3 py-md-4 position-absolute top-0 w-100 z-3"
-    >
+    <nav class="navbar navbar-expand-lg mb-5 py-3 py-md-4 position-absolute top-0 w-100 z-3" >
       <div class="container">
         <a class="navbar-brand" href="#">
           <i class="bi bi-app-indicator me-2 fw-bold fs-3"></i>
@@ -32,30 +30,27 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item ms-0 ms-md-5">
-              <a
-                class="nav-link nav_active"
-                aria-current="page"
-                href="#home_section"
+              <a class="nav-link nav_active" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item ms-0 ms-md-5">
-              <a class="nav-link" href="#about_section">About Me</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item ms-0 ms-md-5">
-              <a class="nav-link" href="#projects_section">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item ms-0 ms-md-5">
-              <a class="nav-link" href="#contact_section">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid mx-auto main_view">
+    <div class="container-fluid mx-auto main_view bg-yellow">
       <!-- Home Section Start -->
-      <section id="home_section" class="row min-vh-100">
+      <section id="home" class="row min-vh-100 bg-yellow">
         <div class="col-12 col-md-10 mx-auto">
           <p
             class="headline_text_name text-dark fw-bold text-center text-nowrap"
@@ -78,10 +73,10 @@
           </div>
 
           <div
-            class="d-flex flex-column flex-md-row align-items-end justify-content-between"
+            class="d-flex flex-column flex-md-row align-items-end justify-content-between mb-5"
           >
             <div class="w-100 d-none d-md-block">
-              <a class="nav-link" href="#contact_section">
+              <a class="nav-link" href="#contact">
                 <button class="cssbuttons-io-button">
                   Contact Me
                   <div class="icon">
@@ -135,38 +130,79 @@
             </p>
           </div>
 
-          <div
-            class="description_box rounded-3 border border-secondary p-3 my-4 d-none"
-          >
-            <p class="mb-0">
-              I'm a Computer Science student at UCS-Maubin, diving into the
-              world of programming. I've been learning PHP for over a year now
-              and I'm currently working on my own project using Laravel. Next
-              up, I'll be exploring React.js for frontend development. I love
-              learning new things, especially when they're related to my work.
-              I'm a quick learner and always eager to try out new technologies.
-              I believe that staying curious and open to learning is crucial for
-              a developer, and I'm determined to keep growing in this field.
-            </p>
-          </div>
         </div>
       </section>
       <!-- Home Section End -->
 
       <!-- About Section Start -->
-      <section id="about_section" class="row min-vh-100 bg-dark">
-        <div class="col-12 col-md-10 mx-auto"></div>
+      <section id="about" class="row min-vh-100 bg-dark py-5">
+        <div class="col-12 col-md-10 mx-auto my-auto">
+          <div class="d-flex flex-column flex-md-row justify-content-evenly mb-5">
+            
+            <div class="profile_image_container_2 w-50">
+              <div class="profile_image_background_2 rounded-5"></div>
+              <img
+                src="https://img.freepik.com/premium-photo/young-handsome-businessman-against-flat-wall-with-placard_1194-37068.jpg?w=2000"
+                class="rounded-5 shadow object-fit-cover mx-auto profile_image_2"
+              />
+            </div>
+
+            <div class="text_box_container w-50">
+              <div>
+                <p class="mb-2 text-secondary fs-4">About Me</p>
+                <p class="mb-3 text-white h0">
+                  A Computer Science student, diving into the world of programming.
+                </p>
+                <p class="mb-4 text-white-50 fs-3" style="width: 90%;text-align: justify;">
+                    I'm a Computer Science student at UCS-Maubin, diving into the
+                    world of programming. I've been learning PHP for over a year now
+                    and I'm currently working on my own project using Laravel. Next
+                    up, I'll be exploring React.js for frontend development. I love
+                    learning new things, especially when they're related to my work.
+                    I'm a quick learner and always eager to try out new technologies.
+                    I believe that staying curious and open to learning is crucial for
+                    a developer, and I'm determined to keep growing in this field.
+                </p>
+                <button class="btn btn-secondary hire_btn">Download CV</button>
+              </div>
+            </div>
+
+        </div>
       </section>
       <!-- About Section End -->
 
+      <!-- Skill & Experience Section Start -->
+      <section id="skill" class="row min-vh-100 bg-yellow">
+        <div class="col-12 col-md-10 mx-auto my-auto">
+
+          <div class="text_box_container">
+              <div>
+                <p class="mb-2 text-dark h0 text-center">Skills & Experiences</p>
+                <p class="mb-4 text-dark fs-3 text-center">
+                    I'm a Computer Science student at UCS-Maubin, diving into the
+                    world of programming.
+                </p>
+
+                <img src="./gg.svg"
+                class="w-100 object-fit-cover"
+                style="height: 500px;">
+
+                <button class="btn btn-secondary hire_btn">Download CV</button>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+      <!-- Experience Section End -->
+
       <!-- Projects Section Start -->
-      <section id="projects_section" class="row min-vh-100">
+      <section id="projects" class="row min-vh-100">
         <div class="col-12 col-md-10 mx-auto"></div>
       </section>
       <!-- Projects Section End -->
 
       <!-- Contact Section Start -->
-      <section id="contact_section" class="row min-vh-100 bg-primary">
+      <section id="contact" class="row min-vh-100 bg-primary">
         <div class="col-12 col-md-10 mx-auto"></div>
       </section>
       <!-- Contact Section End -->
