@@ -21,6 +21,10 @@
   line-height: 3rem;
 }
 
+.text-dark-50{
+  color: $dark50;
+}
+
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -174,6 +178,14 @@ html.sr .load-hidden {
 }
 
 // Custom Contact Button End
+
+.skill_card{
+  width: 900px;
+  height: 500px;
+  background: $yellow30;
+  border: 2px solid $yellow50;
+  padding: 35px;
+}
 
 // For Phone Screen
 @media screen and (max-width: 768px) {
